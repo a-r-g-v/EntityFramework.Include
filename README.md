@@ -12,6 +12,7 @@ To install EntityFramework.Include, run the following command in Package Manager
     PM> Install-Package EntityFramework.Include
 
 ##Usage
+```c#
     //Required using EntityFramework.Include.Extensions
     
     //Example Entity...
@@ -60,3 +61,4 @@ If include same property, the last include will be preferred
                                 .ToListWithInclude();
                                 
     Console.WriteLine(list.First().Children.Count); //20
+```
